@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<label> Hijri Date : @DateTime.Now.ToString("yyyy-MM-dd")</label>
+<br />
+<label>Gregorian Date : @DateTime.Now.Year-@DateTime.Now.Month-@DateTime.Now.Day</label>
+
+
+<form method="post">
+    <input type="text" name="date" />
+    <button>Send</button>
+</form>
